@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Lovelo';
+	src: url('../font/Lovelo-Black.eot');
+	src: local('Lovelo-Black'),
+		url('../font/Lovelo-Black.eot?#iefix') format('embedded-opentype'),
+		url('../font/Lovelo-Black.woff') format('woff'),
+		url('../font/Lovelo-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../font/Lato-Regular.eot');
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/Lato-Regular.woff') format('woff'),
+		url('../font/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,67 @@
+header{
+    &:before{
+        height: 25px;
+        display: block;
+        content: "";
+    }
+    font-size: 13px;
+    background: white;
+    text-align: center;
+    .logo{
+        text-align: left;
+        line-height: 30px;
+    }
+    .search{
+        position: relative;
+        line-height: 30px;
+        input{
+            border-radius: 15px;
+            width: 90%;
+            height: 30px;
+        }
+        .magnifier{
+            position: absolute;
+            right: 30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+        }
+    }
+    .col-l-1{
+        line-height: 30px;
+        span{
+            font-family: 'Lato', Arial, sans-serif;
+        }
+        button{
+            font-family: 'Lovelo', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 11px;
+            border-radius: 15px;
+            background: orange;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
+            width: 105px;
+            height: 32px;
+            color: white;
+            font-weight: 900;
+            line-height: 10px;
+        }
+    }
+    .slogan{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    nav{
+        text-align: left;
+        ul{
+            padding: 15px 0;
+            li{
+                display: inline-block;
+                width: 8%;
+                font-weight: bold;
+                font-size: 13px;
+                font-family: 'Lovelo', Arial, sans-serif;
+            }
+        }
+    }
+}

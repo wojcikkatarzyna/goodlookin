@@ -31,7 +31,7 @@ module.exports = {
               test: /\.jpg/,
               loader: 'file-loader'
             }
-        ],        
+        ],
         rules: [
             {
                 test: /\.scss$/,

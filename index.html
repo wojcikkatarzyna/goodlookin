@@ -5,39 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Goodlookin </title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
     <header class="container">
         <div class="row">
-            <div class="col-l-2">
+            <div class="col-l-3 logo">
                 <img src="images/logo.png" alt="logo goodlookin" />
             </div>
-            <div class="col-l-6">
-                <ul>
-                    <li> <input type="search" placeholder="Szukaj produktu ..." /> </li>
-                    <li> Twoje konto </li>
-                    <li> Koszyk </li>
-                    <li> <button> DO KASY </button> </li>
-                </ul>
+            <div class="col-l-2 search">
+                <input type="search" placeholder="Szukaj produktu ..." />
+                <div class="magnifier"> &#128269; </div>
+            </div>
+            <div class="col-l-1 fa fa-user">
+                <span> Twoje konto </span>
+            </div>
+            <div class="col-l-1 fa fa-shopping-cart">
+                <span> 0.00 zł / prod.(0) </span>
+            </div>
+            <div class="col-l-1">
+                <button> DO KASY </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-l-1">
+        <div class="row slogan">
+            <div class="col-l-2">
                 THAT'S WHAT WE CALL FASHION
             </div>
-            <div class="col-l-7">
+            <div class="col-l-6">
                 <hr />
             </div>
         </div>
         <nav class="row">
             <div class="col-l-8">
                 <ul>
-                    <li> ODZIEŻ </li>
-                    <li> AKCESORIA </li>
-                    <li> TRENDY </li>
-                    <li> MARKI </li>
+                    <li>
+                        ODZIEŻ
+                        <span class="fa fa-caret-down"></span>
+                    </li>
+                    <li>
+                        AKCESORIA
+                        <span class="fa fa-caret-down"></span>
+                    </li>
+                    <li>
+                        TRENDY
+                        <span class="fa fa-caret-down"></span>
+                    </li>
+                    <li>
+                        MARKI
+                        <span class="fa fa-caret-down"></span>
+                    </li>
                     <li> NOWOŚCI </li>
                     <li> PROMOCJE </li>
                 </ul>
@@ -45,7 +64,7 @@
         </nav>
     </header>
 
-    <section class="container">
+    <main class="container">
         <aside>
             <div class="row">
                 <div class="col-l-4">
@@ -59,7 +78,7 @@
                 </div>
             </div>
         </aside>
-        <main>
+        <section>
             <div class="row">
                 <div class="col-l-1">
                     OSTATNIO OGLĄDANE:
@@ -141,8 +160,8 @@
                     <button> ZOBACZ WIĘCEJ PRODUKTÓW </button>
                 </div>
             </div>
-        </main>
-    </section>
+        </section>
+    </main>
 
     <footer class="container">
         <div class="row">

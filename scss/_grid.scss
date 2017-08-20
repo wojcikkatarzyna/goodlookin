@@ -1,6 +1,6 @@
 $grid_numberOfColumns: 8;
 $grid_singleColumnWidth: 100% / $grid_numberOfColumns;
-$grid_containerWidth: 1200px;
+$grid_containerWidth: 1115px;
 
 @mixin desktop {
     @media( min-width: 1024px ) {
