@@ -3,13 +3,13 @@ $grid_singleColumnWidth: 100% / $grid_numberOfColumns;
 $grid_containerWidth: 1150px;
 
 @mixin desktop {
-    @media( min-width: 1024px ) {
+    @media( min-width: 1050px ) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media(min - width: 765px) {
+    @media(min - width: 640px) {
         @content;
     }
 }

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let price = Number(span.dataset.price);
             totalPrice += price;
             itemCounter++;
-            basket.innerText = totalPrice.toFixed(2)+"zł, prod.( "+itemCounter+" )";
+            basket.innerText = totalPrice.toFixed(2)+" zł, prod. ( "+itemCounter+" )";
         })
     }
 
