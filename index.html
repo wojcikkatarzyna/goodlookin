@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/out.js"></script>
 </head>
 
 <body>
@@ -68,21 +69,20 @@
         </nav>
     </header>
 
-    <main class="container">
-        <aside>
-            <div class="row">
-                <div class="col-l-4">
-                    <h1> NOWA KOLEKCJA <br /> JESIEŃ 2015</h1>
-                    <h2>
-                        Niebanalna, pikowana kurtka wiosenna! Kurtka bardzo dobrze skrojona.
-                        Zapinana na napy. <br />
-                        Wykonana z świetnej jakości materiału. Kurtka jest pikowana.
-                    </h2>
-                    <button> DOWIEDZ SIĘ WIĘCEJ </button>
-                </div>
+    <main>
+        <aside class="row">
+            <div class="container col-l-8 banner">
+                <h1> NOWA KOLEKCJA <br /> JESIEŃ 2015</h1>
+                <h2>
+                    Niebanalna, pikowana kurtka wiosenna! Kurtka bardzo dobrze skrojona.
+                    Zapinana na napy. <br />
+                    Wykonana z świetnej jakości materiału. Kurtka jest pikowana.
+                </h2>
+                <button> DOWIEDZ SIĘ WIĘCEJ </button>
+                <img src="images/banner.png"/>
             </div>
         </aside>
-        <section>
+        <section class="container">
             <div class="row gallery">
                 <div class="col-l-2 galleryTitle">
                     OSTATNIO OGLĄDANE:
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="row menu">
-                <div class="col-l-2">
+                <div class="col-l-2 lines">
                     <hr />
                 </div>
                 <div class="col-l-4">
@@ -113,7 +113,7 @@
                      --><li> PROMOCJE </li>
                     </ul>
                 </div>
-                <div class="col-l-2">
+                <div class="col-l-2 lines">
                     <hr />
                 </div>
             </div>
@@ -122,7 +122,7 @@
                     <figure>
                         <img src="images/parka1.png" alt="Parka zimowa K&L bordowa (KM1519)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.90 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.90"> 159.90 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L bordowa (KM1519)</span>
                             <br />
@@ -132,7 +132,7 @@
                     <figure>
                         <img src="images/parka2.png" alt="Parka zimowa K&L beżowa (KM1518)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.80 ZŁ</span>
+                            <span class="shopItemPrice"  data-price="159.80"> 159.80 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L beżowa (KM1518)</span>
                             <br />
@@ -142,9 +142,9 @@
                     <figure>
                         <img src="images/parka3.png" alt="Parka zimowa K&L zielona (KM1517)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.70 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.70"> 159.70 ZŁ</span>
                             <br />
-                            <span class="shopItemName"> Parka zimowa K&L zielona (KM1517)</span>
+                            <span class="shopItemName"> Parka zimowa K&L zielona  (KM1517)</span>
                             <br />
                             <button class="buyItem"> Dodaj do koszyka </button>
                         </figcaption>
@@ -152,7 +152,7 @@
                     <figure>
                         <img src="images/parka4.png" alt="Parka zimowa K&L granatowa (KM1516)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.60 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.60"> 159.60 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L granatowa (KM1516)</span>
                             <br />
@@ -162,7 +162,7 @@
                     <figure>
                         <img src="images/parka1.png" alt="Parka zimowa K&L bordowa (KM1519)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.90 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.90"> 159.90 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L bordowa (KM1519)</span>
                             <br />
@@ -172,7 +172,7 @@
                     <figure>
                         <img src="images/parka2.png" alt="Parka zimowa K&L beżowa (KM1518)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.80 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.80"> 159.80 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L beżowa (KM1518)</span>
                             <br />
@@ -182,9 +182,9 @@
                     <figure>
                         <img src="images/parka3.png" alt="Parka zimowa K&L zielona (KM1517)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.70 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.70"> 159.70 ZŁ</span>
                             <br />
-                            <span class="shopItemName"> Parka zimowa K&L zielona (KM1517)</span>
+                            <span class="shopItemName"> Parka zimowa K&L zielona  (KM1517)</span>
                             <br />
                             <button class="buyItem"> Dodaj do koszyka </button>
                         </figcaption>
@@ -192,7 +192,7 @@
                     <figure>
                         <img src="images/parka4.png" alt="Parka zimowa K&L granatowa (KM1516)"/>
                         <figcaption>
-                            <span class="shopItemPrice"> 159.60 ZŁ</span>
+                            <span class="shopItemPrice" data-price="159.60"> 159.60 ZŁ</span>
                             <br />
                             <span class="shopItemName"> Parka zimowa K&L granatowa (KM1516)</span>
                             <br />
@@ -249,8 +249,8 @@
             <div class="col-l-3 contact">
                 <h3> NEWSLETTER </h3>
                 <form>
-                    <input type="email" placeholder="Wpisz swój adres e-mail"/>
-                    <input type="submit" value="Zapisz się"/>
+                    <input type="email" placeholder="Wpisz swój adres e-mail"/><!--
+                 --><input type="submit" value="Zapisz się"/>
                 </form>
                 <h3> KONTAKT </h3>
                 <span class="phoneNumber"> 517 577 517 </span>

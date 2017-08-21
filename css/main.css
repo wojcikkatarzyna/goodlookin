@@ -300,7 +300,8 @@ header {
       line-height: 10px; }
   header .slogan {
     font-size: 11px;
-    line-height: 15px; }
+    line-height: 15px;
+    font-family: 'Lato', Arial, sans-serif; }
   header nav {
     text-align: left; }
     header nav ul {
@@ -314,30 +315,54 @@ header {
         font-family: 'Lovelo', Arial, sans-serif; }
 
 aside {
-  height: 500px;
+  height: 515px;
   background: #e0ddd6;
   font-family: 'Lovelo', Arial, sans-serif;
   font-weight: bold;
-  padding-left: 35px; }
-  aside h1 {
-    font-size: 50px;
-    color: white; }
-  aside h2 {
-    font-family: 'Lato', Arial, sans-serif; }
-  aside button {
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
-    width: 175px;
-    height: 32px;
-    background: white;
-    border-radius: 15px; }
+  overflow: hidden; }
+  aside .banner {
+    position: relative; }
+    aside .banner h1 {
+      font-size: 50px;
+      line-height: 50px;
+      color: white;
+      position: absolute;
+      top: 150px;
+      left: 35px;
+      z-index: 1; }
+    aside .banner h2 {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 14px;
+      position: absolute;
+      top: 275px;
+      left: 35px;
+      z-index: 1; }
+    aside .banner button {
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
+      width: 175px;
+      height: 32px;
+      background: white;
+      border-radius: 15px;
+      position: absolute;
+      top: 350px;
+      left: 35px;
+      font-family: 'Lovelo', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 11px;
+      z-index: 1; }
+    aside .banner img {
+      position: absolute;
+      top: 100px;
+      right: 50px;
+      transform: scale(1.5); }
 
 section {
   font-family: 'Lovelo', Arial, sans-serif;
   font-weight: bold;
   background: white; }
   section .gallery {
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    border-bottom: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
     padding-left: 35px; }
     section .gallery .galleryTitle {
       font-size: 14px;
@@ -349,13 +374,15 @@ section {
       height: 100px; }
       section .gallery .galleryImages img {
         width: 11.11%;
-        border-left: 1px solid grey;
+        border-left: 1px solid #f3f3f3;
         padding: 20px 30px; }
   section .menu {
     height: 115px; }
-    section .menu ul {
-      padding: 45px; }
-      section .menu ul li {
+    section .menu .lines {
+      padding: 40px 0; }
+    section .menu div {
+      line-height: 115px; }
+      section .menu div ul li {
         display: inline-block;
         font-size: 18px;
         width: 33.33%;
@@ -365,19 +392,25 @@ section {
     flex-wrap: wrap;
     justify-content: space-between; }
     section .shopItems figure {
-      width: 22.5%;
-      text-align: center; }
+      width: 22%;
+      text-align: center;
+      min-height: 460px; }
       section .shopItems figure img {
-        min-height: 315px; }
+        min-height: 320px; }
       section .shopItems figure figcaption {
-        border-top: 1px solid grey;
+        border-top: 1px solid #f3f3f3;
         padding: 15px; }
+        section .shopItems figure figcaption .shopItemPrice {
+          font-size: 16px; }
         section .shopItems figure figcaption .shopItemName {
-          font-family: 'Lato', Arial, sans-serif; }
+          font-family: 'Lato', Arial, sans-serif;
+          font-size: 14px;
+          color: #a8a8a8; }
         section .shopItems figure figcaption button {
           background: #ff7118;
           font-family: 'Lovelo', Arial, sans-serif;
           font-weight: bold;
+          font-size: 11px;
           padding: 5px 10px;
           border-radius: 15px;
           color: white;
@@ -390,10 +423,11 @@ section {
       box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
       font-family: 'Lovelo', Arial, sans-serif;
       font-weight: bold;
-      margin: 25px 0; }
+      margin: 25px 0;
+      font-size: 11px; }
 
 footer {
-  border: 1px solid grey;
+  border: 1px solid #f3f3f3;
   font-family: 'Lato', Arial, sans-serif;
   padding: 35px; }
   footer h3 {
@@ -412,7 +446,7 @@ footer {
   footer .payment .extraInfo {
     color: #ff7118; }
   footer .contact {
-    padding-left: 45px; }
+    padding-left: 50px; }
     footer .contact form {
       margin-top: 15px;
       margin-bottom: 35px;
@@ -426,7 +460,7 @@ footer {
           color: white;
           font-family: 'Lovelo', Arial, sans-serif;
           font-weight: bold;
-          width: 25%; }
+          width: 30%; }
     footer .contact .phoneNumber {
       font-size: 30px;
       color: #a8a8a8;
@@ -442,3 +476,6 @@ details {
   font-family: 'Lato', Arial, sans-serif;
   font-size: 12px;
   line-height: 18px; }
+
+button:hover {
+  transform: scale(1.25); }

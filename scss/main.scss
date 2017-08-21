@@ -6,3 +6,7 @@
 @import "section";
 @import "footer";
 @import "details";
+
+button:hover{
+    transform: scale(1.25);
+}

@@ -2,10 +2,9 @@ section{
     font-family: 'Lovelo', Arial, sans-serif;
     font-weight: bold;
     background: white;
-
     .gallery{
-        border-bottom: 1px solid grey;
-        border-right: 1px solid grey;
+        border-bottom: 1px solid $border_color1;
+        border-right: 1px solid $border_color1;
         padding-left: $left_padding;
         .galleryTitle{
             font-size: 14px;
@@ -18,20 +17,25 @@ section{
             height: 100px;
             img{
                 width: 11.11%;
-                border-left: 1px solid grey;
+                border-left: 1px solid $border_color1;
                 padding: 20px 30px;
             }
         }
     }
     .menu{
         height: 115px;
-        ul{
-            padding: 45px;
-            li{
-                display: inline-block;
-                font-size: 18px;
-                width: 33.33%;
-                text-align: center;
+        .lines{
+            padding: 40px 0;
+        }
+        div{
+            line-height: 115px;
+            ul{
+                li{
+                    display: inline-block;
+                    font-size: 18px;
+                    width: 33.33%;
+                    text-align: center;
+                }
             }
         }
     }
@@ -40,21 +44,28 @@ section{
         flex-wrap: wrap;
         justify-content: space-between;
         figure{
-            width: 22.5%;
+            width: 22%;
             text-align: center;
+            min-height: 460px;
             img{
-                min-height: 315px;
+                min-height: 320px;
             }
             figcaption{
-                border-top: 1px solid grey;
+                border-top: 1px solid $border_color1;
                 padding: 15px;
+                .shopItemPrice{
+                    font-size: 16px;
+                }
                 .shopItemName{
                     font-family: 'Lato', Arial, sans-serif;
+                    font-size: 14px;
+                    color: $font_color3;
                 }
                 button{
                     background: $background_color3;
                     font-family: 'Lovelo', Arial, sans-serif;
                     font-weight: bold;
+                    font-size: 11px;
                     padding: 5px 10px;
                     border-radius: 15px;
                     color: $font_color1;
@@ -72,6 +83,7 @@ section{
             font-family: 'Lovelo', Arial, sans-serif;
             font-weight: bold;
             margin: 25px 0;
+            font-size: 11px;
         }
     }
 }
