@@ -1,0 +1,55 @@
+section{
+    font-family: 'Lovelo', Arial, sans-serif;
+    font-weight: bold;
+    background: white;
+    .gallery{
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        .galleryTitle{
+            font-size: 14px;
+            line-height: 100px;
+        }
+        .galleryImages{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 100px;
+            img{
+                width: 11.11%;
+
+                border-left: 1px solid grey;
+                padding: 20px 30px;
+            }
+        }
+    }
+    .menu{
+        height: 115px;
+        ul{
+            padding: 45px;
+            li{
+                display: inline-block;
+                font-size: 18px;
+                width: 33.33%;
+                text-align: center;
+            }
+        }
+    }
+    .shopItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        figure{
+            width: 22.5%;
+            figcaption{
+                .shopItemPrice{
+                    width: 100%;
+                }
+                .shopItemName{
+                    width: 100%;
+                    font-family: 'Lato', Arial, sans-serif;
+                }
+            }
+        }
+
+    }
+}
