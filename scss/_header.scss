@@ -73,8 +73,6 @@ header{
                 font-size: 13px;
                 font-family: 'Lovelo', Arial, sans-serif;
                 @include tablet{
-                    display: float;
-                    float: left;
                     width: 16.66%;
                     margin: 15px 0;
                 };

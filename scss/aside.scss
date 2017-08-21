@@ -1,9 +1,14 @@
 aside{
-    height: 515px;
+
+    height: 475px;
     background: $background_color2;
     font-family: 'Lovelo', Arial, sans-serif;
     font-weight: bold;
     overflow: hidden;
+    @include tablet{
+        width: 100vw;
+        height: 45vw;
+    };
     .banner{
         position: relative;
         h1{
@@ -14,6 +19,11 @@ aside{
             top: 150px;
             left: $left_padding;
             z-index: 1;
+            @include tablet{
+                font-size: 35px;
+                line-height: 35px;
+                top: 100px;
+            };
         }
         h2{
             font-family: 'Lato', Arial, sans-serif;
@@ -22,6 +32,11 @@ aside{
             top: 275px;
             left: $left_padding;
             z-index: 1;
+            @include tablet{
+                font-size: 11px;
+                top: 180px;
+                width: 250px;
+            };
         }
         button{
             box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
@@ -36,12 +51,21 @@ aside{
             font-weight: bold;
             font-size: 11px;
             z-index: 1;
+            @include tablet{
+                top: 250px;
+
+            };
         }
         img{
+            float: left;
             position: absolute;
-            top: 100px;
-            right: 50px;
+            top: 80px;
+            right: 0;
             transform: scale(1.5);
+            height: auto;
+            @include tablet{
+                top: 75px;
+            };
         }
     }
 

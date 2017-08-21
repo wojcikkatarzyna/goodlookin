@@ -204,7 +204,7 @@ input[type=button] {
   .container .row [class*='col-'] {
     float: left;
     width: 100%; }
-  @media (min-width: 320px) {
+  @media (max-width: 768px) {
     .container .row .col-s-1 {
       width: 12.5%; }
     .container .row .col-s-2 {
@@ -221,7 +221,7 @@ input[type=button] {
       width: 87.5%; }
     .container .row .col-s-8 {
       width: 100%; } }
-  @media (min-width: 640px) {
+  @media (min-width: 768px) and (max-width: 1049px) {
     .container .row .col-m-1 {
       width: 12.5%; }
     .container .row .col-m-2 {
@@ -270,7 +270,7 @@ header {
   header .search {
     position: relative;
     line-height: 30px; }
-    @media (min-width: 640px) {
+    @media (min-width: 768px) and (max-width: 1049px) {
       header .search {
         line-height: 50px; } }
     header .search input {
@@ -304,7 +304,7 @@ header {
     font-size: 11px;
     line-height: 15px;
     font-family: 'Lato', Arial, sans-serif; }
-    @media (min-width: 640px) {
+    @media (min-width: 768px) and (max-width: 1049px) {
       header .slogan {
         display: none; } }
   header nav {
@@ -318,19 +318,21 @@ header {
         font-weight: bold;
         font-size: 13px;
         font-family: 'Lovelo', Arial, sans-serif; }
-        @media (min-width: 640px) {
+        @media (min-width: 768px) and (max-width: 1049px) {
           header nav ul li {
-            display: float;
-            float: left;
             width: 16.66%;
             margin: 15px 0; } }
 
 aside {
-  height: 515px;
+  height: 475px;
   background: #e0ddd6;
   font-family: 'Lovelo', Arial, sans-serif;
   font-weight: bold;
   overflow: hidden; }
+  @media (min-width: 768px) and (max-width: 1049px) {
+    aside {
+      width: 100vw;
+      height: 45vw; } }
   aside .banner {
     position: relative; }
     aside .banner h1 {
@@ -341,6 +343,11 @@ aside {
       top: 150px;
       left: 35px;
       z-index: 1; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        aside .banner h1 {
+          font-size: 35px;
+          line-height: 35px;
+          top: 100px; } }
     aside .banner h2 {
       font-family: 'Lato', Arial, sans-serif;
       font-size: 14px;
@@ -348,6 +355,11 @@ aside {
       top: 275px;
       left: 35px;
       z-index: 1; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        aside .banner h2 {
+          font-size: 11px;
+          top: 180px;
+          width: 250px; } }
     aside .banner button {
       box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
       width: 175px;
@@ -361,11 +373,19 @@ aside {
       font-weight: bold;
       font-size: 11px;
       z-index: 1; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        aside .banner button {
+          top: 250px; } }
     aside .banner img {
+      float: left;
       position: absolute;
-      top: 100px;
-      right: 50px;
-      transform: scale(1.5); }
+      top: 80px;
+      right: 0;
+      transform: scale(1.5);
+      height: auto; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        aside .banner img {
+          top: 75px; } }
 
 section {
   font-family: 'Lovelo', Arial, sans-serif;
