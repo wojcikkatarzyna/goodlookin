@@ -193,7 +193,7 @@ input[type=button] {
 
 .container {
   width: 100%;
-  max-width: 1115px;
+  max-width: 1150px;
   margin: 0 auto; }
   .container .row::before, .container .row::after {
     content: "";
@@ -266,7 +266,8 @@ header {
     content: ""; }
   header .logo {
     text-align: left;
-    line-height: 30px; }
+    line-height: 30px;
+    padding-left: 35px; }
   header .search {
     position: relative;
     line-height: 30px; }
@@ -303,10 +304,11 @@ header {
   header nav {
     text-align: left; }
     header nav ul {
-      padding: 15px 0; }
+      padding: 15px 15px; }
       header nav ul li {
         display: inline-block;
         width: 8%;
+        text-align: center;
         font-weight: bold;
         font-size: 13px;
         font-family: 'Lovelo', Arial, sans-serif; }
@@ -315,7 +317,8 @@ aside {
   height: 500px;
   background: #e0ddd6;
   font-family: 'Lovelo', Arial, sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: 35px; }
   aside h1 {
     font-size: 50px;
     color: white; }
@@ -334,7 +337,8 @@ section {
   background: white; }
   section .gallery {
     border-bottom: 1px solid grey;
-    border-right: 1px solid grey; }
+    border-right: 1px solid grey;
+    padding-left: 35px; }
     section .gallery .galleryTitle {
       font-size: 14px;
       line-height: 100px; }
@@ -361,9 +365,80 @@ section {
     flex-wrap: wrap;
     justify-content: space-between; }
     section .shopItems figure {
-      width: 22.5%; }
-      section .shopItems figure figcaption .shopItemPrice {
-        width: 100%; }
-      section .shopItems figure figcaption .shopItemName {
-        width: 100%;
-        font-family: 'Lato', Arial, sans-serif; }
+      width: 22.5%;
+      text-align: center; }
+      section .shopItems figure img {
+        min-height: 315px; }
+      section .shopItems figure figcaption {
+        border-top: 1px solid grey;
+        padding: 15px; }
+        section .shopItems figure figcaption .shopItemName {
+          font-family: 'Lato', Arial, sans-serif; }
+        section .shopItems figure figcaption button {
+          background: #ff7118;
+          font-family: 'Lovelo', Arial, sans-serif;
+          font-weight: bold;
+          padding: 5px 10px;
+          border-radius: 15px;
+          color: white;
+          margin: 5px 0; }
+  section .seeMore {
+    text-align: center; }
+    section .seeMore button {
+      padding: 10px 15px;
+      border-radius: 15px;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
+      font-family: 'Lovelo', Arial, sans-serif;
+      font-weight: bold;
+      margin: 25px 0; }
+
+footer {
+  border: 1px solid grey;
+  font-family: 'Lato', Arial, sans-serif;
+  padding: 35px; }
+  footer h3 {
+    font-family: 'Lovelo', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px; }
+  footer ul li {
+    font-size: 13px;
+    line-height: 36px; }
+  footer .payment div {
+    font-size: 13px;
+    color: #a8a8a8;
+    line-height: 18px;
+    margin-top: 15px; }
+  footer .payment .extraInfo {
+    color: #ff7118; }
+  footer .contact {
+    padding-left: 45px; }
+    footer .contact form {
+      margin-top: 15px;
+      margin-bottom: 35px;
+      font-size: 11px; }
+      footer .contact form input {
+        border-radius: 15px;
+        height: 35px;
+        width: 70%; }
+        footer .contact form input[type=submit] {
+          background: #ff7118;
+          color: white;
+          font-family: 'Lovelo', Arial, sans-serif;
+          font-weight: bold;
+          width: 25%; }
+    footer .contact .phoneNumber {
+      font-size: 30px;
+      color: #a8a8a8;
+      line-height: 50px;
+      font-weight: 700; }
+    footer .contact .email {
+      font-size: 14px;
+      font-weight: 700; }
+
+details {
+  padding: 25px;
+  color: #a8a8a8;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px; }

@@ -1,9 +1,10 @@
 aside{
     height: 500px;
-    background: #e0ddd6;
+    background: $background_color2;
     //background-image: url('../images/banner.png');
     font-family: 'Lovelo', Arial, sans-serif;
     font-weight: bold;
+    padding-left: $left_padding;
     h1{
         font-size: 50px;
         color: white;
