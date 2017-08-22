@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     // add price and number of chosen product to basket
-    const btnBuyItem = document.querySelectorAll('.buyItem');
-    const basket = document.querySelector('.basket span');
-    const mobileBasket = document.querySelector('.basket p');
+    var btnBuyItem = document.querySelectorAll('.buyItem');
+    var basket = document.querySelector('.basket span');
+    var mobileBasket = document.querySelector('.basket p');
     var totalPrice = 0;
     var itemCounter = 0;
 
