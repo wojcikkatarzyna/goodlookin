@@ -12,6 +12,10 @@ aside{
         width: 100vw;
         height: 45vw;
     };
+    @include xs{
+        width: 100vw;
+        height: 45vw;
+    };
     .banner{
         position: relative;
         h1{
@@ -30,7 +34,13 @@ aside{
             @include smartphone{
                 font-size: 25px;
                 line-height: 25px;
-                top: 75px;
+                top: 50px;
+            };
+            @include xs{
+                font-size: 20px;
+                line-height: 20px;
+                top: 35px;
+                left: 15px;
             };
         }
         h2{
@@ -47,8 +57,11 @@ aside{
             };
             @include smartphone{
                 font-size: 10px;
-                top: 135px;
+                top: 110px;
                 width: 250px;
+            };
+            @include xs{
+                display: none;
             };
         }
         button{
@@ -68,9 +81,16 @@ aside{
                 top: 250px;
             };
             @include smartphone{
-                top: 200px;
+                top: 165px;
                 width: 150px;
                 height: 25px;
+                font-size: 9px;
+            };
+            @include xs{
+                top: 100px;
+                left: 15px;
+                width: 125px;
+                height: 20px;
                 font-size: 9px;
             };
         }
@@ -86,7 +106,10 @@ aside{
                 left: 0;
             };
             @include smartphone{
-                top: 50px;
+                top: 55px;
+            };
+            @include xs{
+                top: 30px;
             };
         }
     }

@@ -15,7 +15,13 @@ $grid_containerWidth: 1150px;
 }
 
 @mixin smartphone {
-    @media( min-width: 320px ) and ( max-width: 767px) {
+    @media( min-width: 500px ) and ( max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media( max-width: 500px ) {
         @content;
     }
 }
@@ -59,6 +65,14 @@ $grid_containerWidth: 1150px;
         @include desktop {
             @for $i from 1 through $grid_numberOfColumns {
                 .col-l-#{$i} {
+                    width: $grid_singleColumnWidth * $i;
+                }
+            }
+        }
+
+        @include xs {
+            @for $i from 1 through $grid_numberOfColumns {
+                .col-xs-#{$i} {
                     width: $grid_singleColumnWidth * $i;
                 }
             }

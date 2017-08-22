@@ -6,12 +6,18 @@ section{
         border-bottom: 1px solid $border_color1;
         border-right: 1px solid $border_color1;
         padding-left: $left_padding;
+        @include xs{
+            padding-left: 0;
+        };
         .galleryTitle{
             font-size: 14px;
             line-height: 100px;
             @include smartphone{
                 font-size: 11px;
                 line-height: 35px;
+            };
+            @include xs{
+                display: none;
             };
         }
         .galleryImages{
@@ -21,6 +27,9 @@ section{
             height: 100px;
             @include smartphone{
                 height: 75px;
+            };
+            @include xs{
+                height: 50px;
             };
             img{
                 width: 11.11%;
@@ -32,6 +41,9 @@ section{
                 @include smartphone{
                     padding: 10px;
                 };
+                @include xs{
+                    padding: 5px;
+                };
             }
         }
     }
@@ -39,6 +51,9 @@ section{
         height: 115px;
         .lines{
             padding: 40px 0;
+            @include xs{
+                display: none;
+            };
         }
         div{
             line-height: 115px;
@@ -51,7 +66,11 @@ section{
                     &:hover{
                         transform: scale(1.15);
                         color: $font_color2;
+
                     }
+                    @include xs{
+                        font-size: 15px;
+                    };
                 }
             }
         }
@@ -68,6 +87,9 @@ section{
                 width: 30%;
             };
             @include smartphone{
+                width: 45%;
+            };
+            @include xs{
                 width: 45%;
             };
             img{
