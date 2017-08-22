@@ -349,8 +349,8 @@ header {
           color: #a8a8a8; } }
       @media (max-width: 500px) {
         header .search .magnifier {
-          right: 15px;
-          top: 55px;
+          right: 3px;
+          top: 35px;
           color: #a8a8a8;
           font-size: 15px; } }
   header .user, header .basket {
