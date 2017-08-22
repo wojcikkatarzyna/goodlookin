@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnBuyItem = document.querySelectorAll('.buyItem');
     const basket = document.querySelector('.basket span');
     const mobileBasket = document.querySelector('.basket p');
-    let totalPrice = 0;
-    let itemCounter = 0;
+    var totalPrice = 0;
+    var itemCounter = 0;
 
-    for (let i=0; i<btnBuyItem.length; i++) {
+    for (var i=0; i<btnBuyItem.length; i++) {
         btnBuyItem[i].addEventListener('click', function(e) {
             e.preventDefault();
-            let span = this.parentNode.firstChild.nextElementSibling;
-            let price = Number(span.dataset.price);
+            var span = this.parentNode.firstChild.nextElementSibling;
+            var price = Number(span.dataset.price);
             totalPrice += price;
             itemCounter++;
             basket.innerText = totalPrice.toFixed(2)+" zł, prod. ( "+itemCounter+" )";
