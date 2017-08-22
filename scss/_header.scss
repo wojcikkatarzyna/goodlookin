@@ -10,6 +10,7 @@ header{
     .logo{
         text-align: left;
         padding-left: $left_padding;
+        order: 2;
     }
     .search{
         position: relative;
@@ -17,10 +18,18 @@ header{
         @include tablet{
             line-height: 50px;
         };
+        @include smartphone{
+            line-height: 50px;
+            font-size: 30px;
+            order: 1;
+        };
         input{
             border-radius: 15px;
             width: 90%;
             height: 30px;
+            @include smartphone{
+                font-size: 12px;
+            };
         }
         .magnifier{
             position: absolute;
@@ -29,15 +38,31 @@ header{
             width: 20px;
             height: 20px;
             font-size: 20px;
+            @include smartphone{
+                right: 15px;
+                top: 55px;
+                color: $font_color3;
+            };
         }
     }
     .user, .basket{
         line-height: 30px;
+        @include smartphone{
+            font-size: 30px;
+            line-height: 50px;
+            order: 3;
+        };
         span{
             font-family: 'Lato', Arial, sans-serif;
+            @include smartphone{
+                display: none;
+            };
         }
     }
     .order{
+        @include smartphone{
+            display: none;
+        };
         button{
             font-family: 'Lovelo', Arial, sans-serif;
             font-weight: bold;
@@ -52,11 +77,23 @@ header{
             line-height: 10px;
         }
     }
+    .hamburger{
+        display: none;
+        @include smartphone{
+            display: block;
+            font-size: 30px;
+            line-height: 50px;
+            order: 4;
+        };
+    }
     .slogan{
         font-size: 11px;
         line-height: 15px;
         font-family: 'Lato', Arial, sans-serif;
         @include tablet{
+            display: none;
+        };
+        @include smartphone{
             display: none;
         };
     }
@@ -65,6 +102,9 @@ header{
         text-align: left;
         ul{
             padding: 15px 15px;
+            @include smartphone{
+                display: none;
+            };
             li{
                 display: inline-block;
                 width: 8%;
@@ -76,7 +116,30 @@ header{
                     width: 16.66%;
                     margin: 15px 0;
                 };
+                @include smartphone{
+                    width: 16.66%;
+                    margin: 15px 0;
+                };
             }
         }
     }
 }
+
+.showMobileMenu{
+    ul{
+        display: block;
+        li{
+            display: inline-block;
+        }
+    }
+}
+
+@include smartphone{
+    .hideSearchBox{
+        display: none;
+    }
+    div.row:first-of-type{
+        display: flex;
+        //flex-direction: row-reverse;
+    }
+};

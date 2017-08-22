@@ -204,7 +204,7 @@ input[type=button] {
   .container .row [class*='col-'] {
     float: left;
     width: 100%; }
-  @media (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .container .row .col-s-1 {
       width: 12.5%; }
     .container .row .col-s-2 {
@@ -266,17 +266,26 @@ header {
     content: ""; }
   header .logo {
     text-align: left;
-    padding-left: 35px; }
+    padding-left: 35px;
+    order: 2; }
   header .search {
     position: relative;
     line-height: 30px; }
     @media (min-width: 768px) and (max-width: 1049px) {
       header .search {
         line-height: 50px; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header .search {
+        line-height: 50px;
+        font-size: 30px;
+        order: 1; } }
     header .search input {
       border-radius: 15px;
       width: 90%;
       height: 30px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header .search input {
+          font-size: 12px; } }
     header .search .magnifier {
       position: absolute;
       right: 30px;
@@ -284,10 +293,26 @@ header {
       width: 20px;
       height: 20px;
       font-size: 20px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header .search .magnifier {
+          right: 15px;
+          top: 55px;
+          color: #a8a8a8; } }
   header .user, header .basket {
     line-height: 30px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header .user, header .basket {
+        font-size: 30px;
+        line-height: 50px;
+        order: 3; } }
     header .user span, header .basket span {
       font-family: 'Lato', Arial, sans-serif; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header .user span, header .basket span {
+          display: none; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    header .order {
+      display: none; } }
   header .order button {
     font-family: 'Lovelo', Arial, sans-serif;
     font-weight: bold;
@@ -300,6 +325,14 @@ header {
     color: white;
     font-weight: 900;
     line-height: 10px; }
+  header .hamburger {
+    display: none; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header .hamburger {
+        display: block;
+        font-size: 30px;
+        line-height: 50px;
+        order: 4; } }
   header .slogan {
     font-size: 11px;
     line-height: 15px;
@@ -307,10 +340,16 @@ header {
     @media (min-width: 768px) and (max-width: 1049px) {
       header .slogan {
         display: none; } }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header .slogan {
+        display: none; } }
   header nav {
     text-align: left; }
     header nav ul {
       padding: 15px 15px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header nav ul {
+          display: none; } }
       header nav ul li {
         display: inline-block;
         width: 8%;
@@ -322,6 +361,21 @@ header {
           header nav ul li {
             width: 16.66%;
             margin: 15px 0; } }
+        @media (min-width: 320px) and (max-width: 767px) {
+          header nav ul li {
+            width: 16.66%;
+            margin: 15px 0; } }
+
+.showMobileMenu ul {
+  display: block; }
+  .showMobileMenu ul li {
+    display: inline-block; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hideSearchBox {
+    display: none; }
+  div.row:first-of-type {
+    display: flex; } }
 
 aside {
   height: 475px;

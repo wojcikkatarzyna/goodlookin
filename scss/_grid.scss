@@ -15,7 +15,7 @@ $grid_containerWidth: 1150px;
 }
 
 @mixin smartphone {
-    @media( max-width: 768px ) {
+    @media( min-width: 320px ) and ( max-width: 767px) {
         @content;
     }
 }
