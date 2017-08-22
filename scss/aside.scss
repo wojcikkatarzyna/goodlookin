@@ -1,11 +1,14 @@
 aside{
-
     height: 475px;
     background: $background_color2;
     font-family: 'Lovelo', Arial, sans-serif;
     font-weight: bold;
     overflow: hidden;
     @include tablet{
+        width: 100vw;
+        height: 45vw;
+    };
+    @include smartphone{
         width: 100vw;
         height: 45vw;
     };
@@ -24,6 +27,11 @@ aside{
                 line-height: 35px;
                 top: 100px;
             };
+            @include smartphone{
+                font-size: 25px;
+                line-height: 25px;
+                top: 75px;
+            };
         }
         h2{
             font-family: 'Lato', Arial, sans-serif;
@@ -33,8 +41,13 @@ aside{
             left: $left_padding;
             z-index: 1;
             @include tablet{
-                font-size: 11px;
+                font-size: 12px;
                 top: 180px;
+                width: 250px;
+            };
+            @include smartphone{
+                font-size: 10px;
+                top: 135px;
                 width: 250px;
             };
         }
@@ -53,18 +66,27 @@ aside{
             z-index: 1;
             @include tablet{
                 top: 250px;
-
+            };
+            @include smartphone{
+                top: 200px;
+                width: 150px;
+                height: 25px;
+                font-size: 9px;
             };
         }
         img{
             float: left;
             position: absolute;
             top: 80px;
-            right: 0;
+            left: 0;
             transform: scale(1.5);
             height: auto;
             @include tablet{
                 top: 75px;
+                left: 0;
+            };
+            @include smartphone{
+                top: 50px;
             };
         }
     }

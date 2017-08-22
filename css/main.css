@@ -264,25 +264,41 @@ header {
     height: 25px;
     display: block;
     content: ""; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      header:before {
+        height: 10px; } }
   header .logo {
     text-align: left;
     padding-left: 35px;
-    order: 2; }
+    order: 2;
+    line-height: 50px; }
+    @media (min-width: 768px) and (max-width: 1049px) {
+      header .logo {
+        height: 50px; } }
   header .search {
     position: relative;
     line-height: 30px; }
     @media (min-width: 768px) and (max-width: 1049px) {
       header .search {
-        line-height: 50px; } }
+        line-height: 50px;
+        height: 50px; } }
     @media (min-width: 320px) and (max-width: 767px) {
       header .search {
         line-height: 50px;
-        font-size: 30px;
+        font-size: 25px;
         order: 1; } }
+    header .search div.fa {
+      display: none; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header .search div.fa {
+          display: block;
+          line-height: 50px;
+          font-size: 25px; } }
     header .search input {
       border-radius: 15px;
       width: 90%;
-      height: 30px; }
+      height: 30px;
+      font-family: 'Lato', Arial, sans-serif; }
       @media (min-width: 320px) and (max-width: 767px) {
         header .search input {
           font-size: 12px; } }
@@ -302,7 +318,7 @@ header {
     line-height: 30px; }
     @media (min-width: 320px) and (max-width: 767px) {
       header .user, header .basket {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 50px;
         order: 3; } }
     header .user span, header .basket span {
@@ -310,6 +326,12 @@ header {
       @media (min-width: 320px) and (max-width: 767px) {
         header .user span, header .basket span {
           display: none; } }
+    header .user p, header .basket p {
+      display: none; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        header .user p, header .basket p {
+          display: inline;
+          font-size: 3vw; } }
   @media (min-width: 320px) and (max-width: 767px) {
     header .order {
       display: none; } }
@@ -330,7 +352,7 @@ header {
     @media (min-width: 320px) and (max-width: 767px) {
       header .hamburger {
         display: block;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 50px;
         order: 4; } }
   header .slogan {
@@ -352,11 +374,14 @@ header {
           display: none; } }
       header nav ul li {
         display: inline-block;
-        width: 8%;
+        width: 10%;
         text-align: center;
         font-weight: bold;
         font-size: 13px;
         font-family: 'Lovelo', Arial, sans-serif; }
+        header nav ul li:hover {
+          transform: scale(1.15);
+          border: 1px solid #ff7118; }
         @media (min-width: 768px) and (max-width: 1049px) {
           header nav ul li {
             width: 16.66%;
@@ -387,6 +412,10 @@ aside {
     aside {
       width: 100vw;
       height: 45vw; } }
+  @media (min-width: 320px) and (max-width: 767px) {
+    aside {
+      width: 100vw;
+      height: 45vw; } }
   aside .banner {
     position: relative; }
     aside .banner h1 {
@@ -402,6 +431,11 @@ aside {
           font-size: 35px;
           line-height: 35px;
           top: 100px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        aside .banner h1 {
+          font-size: 25px;
+          line-height: 25px;
+          top: 75px; } }
     aside .banner h2 {
       font-family: 'Lato', Arial, sans-serif;
       font-size: 14px;
@@ -411,8 +445,13 @@ aside {
       z-index: 1; }
       @media (min-width: 768px) and (max-width: 1049px) {
         aside .banner h2 {
-          font-size: 11px;
+          font-size: 12px;
           top: 180px;
+          width: 250px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        aside .banner h2 {
+          font-size: 10px;
+          top: 135px;
           width: 250px; } }
     aside .banner button {
       box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.29);
@@ -430,16 +469,26 @@ aside {
       @media (min-width: 768px) and (max-width: 1049px) {
         aside .banner button {
           top: 250px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        aside .banner button {
+          top: 200px;
+          width: 150px;
+          height: 25px;
+          font-size: 9px; } }
     aside .banner img {
       float: left;
       position: absolute;
       top: 80px;
-      right: 0;
+      left: 0;
       transform: scale(1.5);
       height: auto; }
       @media (min-width: 768px) and (max-width: 1049px) {
         aside .banner img {
-          top: 75px; } }
+          top: 75px;
+          left: 0; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        aside .banner img {
+          top: 50px; } }
 
 section {
   font-family: 'Lovelo', Arial, sans-serif;
@@ -452,11 +501,18 @@ section {
     section .gallery .galleryTitle {
       font-size: 14px;
       line-height: 100px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        section .gallery .galleryTitle {
+          font-size: 11px;
+          line-height: 35px; } }
     section .gallery .galleryImages {
       display: flex;
       flex-wrap: nowrap;
       width: 100%;
       height: 100px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        section .gallery .galleryImages {
+          height: 75px; } }
       section .gallery .galleryImages img {
         width: 11.11%;
         border-left: 1px solid #f3f3f3;
@@ -464,6 +520,9 @@ section {
         @media (min-width: 768px) and (max-width: 1049px) {
           section .gallery .galleryImages img {
             padding: 15px; } }
+        @media (min-width: 320px) and (max-width: 767px) {
+          section .gallery .galleryImages img {
+            padding: 10px; } }
   section .menu {
     height: 115px; }
     section .menu .lines {
@@ -475,19 +534,27 @@ section {
         font-size: 18px;
         width: 33.33%;
         text-align: center; }
+        section .menu div ul li:hover {
+          transform: scale(1.15);
+          color: #ff7118; }
   section .shopItems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
     section .shopItems figure {
       width: 22%;
       text-align: center;
       min-height: 460px; }
       @media (min-width: 768px) and (max-width: 1049px) {
         section .shopItems figure {
-          padding: 50px 15px; } }
+          width: 30%; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        section .shopItems figure {
+          width: 45%; } }
       section .shopItems figure img {
         min-height: 320px; }
+        section .shopItems figure img:hover {
+          transform: scale(1.15); }
       section .shopItems figure figcaption {
         border-top: 1px solid #f3f3f3;
         padding: 15px; }
@@ -518,51 +585,59 @@ section {
       font-size: 11px; }
       @media (min-width: 768px) and (max-width: 1049px) {
         section .seeMore button {
-          margin: 0; } }
+          margin: 10px 0; } }
 
 footer {
   border: 1px solid #f3f3f3;
   font-family: 'Lato', Arial, sans-serif;
   padding: 35px; }
-  footer h3 {
-    font-family: 'Lovelo', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px; }
-  footer ul li {
-    font-size: 13px;
-    line-height: 36px; }
-  footer .payment div {
-    font-size: 13px;
-    color: #a8a8a8;
-    line-height: 18px;
-    margin-top: 15px; }
-  footer .payment .extraInfo {
-    color: #ff7118; }
-  footer .contact {
-    padding-left: 50px; }
-    footer .contact form {
-      margin-top: 15px;
-      margin-bottom: 35px;
-      font-size: 11px; }
-      footer .contact form input {
-        border-radius: 15px;
-        height: 35px;
-        width: 70%; }
-        footer .contact form input[type=submit] {
-          background: #ff7118;
-          color: white;
-          font-family: 'Lovelo', Arial, sans-serif;
-          font-weight: bold;
-          width: 30%; }
-    footer .contact .phoneNumber {
-      font-size: 30px;
-      color: #a8a8a8;
-      line-height: 50px;
-      font-weight: 700; }
-    footer .contact .email {
+  footer .row {
+    display: flex;
+    flex-wrap: wrap; }
+    footer .row h3 {
+      font-family: 'Lovelo', Arial, sans-serif;
+      font-weight: bold;
       font-size: 14px;
-      font-weight: 700; }
+      line-height: 21px; }
+    footer .row ul li {
+      font-size: 13px;
+      line-height: 36px; }
+    footer .row .payment div {
+      font-size: 13px;
+      color: #a8a8a8;
+      line-height: 18px;
+      margin-top: 15px; }
+    footer .row .payment .extraInfo {
+      color: #ff7118; }
+    footer .row .contact {
+      padding-left: 50px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        footer .row .contact {
+          padding-left: 0;
+          margin-top: 25px; } }
+      footer .row .contact form {
+        margin-top: 15px;
+        margin-bottom: 35px;
+        font-size: 11px; }
+        footer .row .contact form input {
+          border-radius: 15px;
+          height: 35px;
+          width: 70%;
+          font-family: 'Lato', Arial, sans-serif; }
+          footer .row .contact form input[type=submit] {
+            background: #ff7118;
+            color: white;
+            font-family: 'Lovelo', Arial, sans-serif;
+            font-weight: bold;
+            width: 30%; }
+      footer .row .contact .phoneNumber {
+        font-size: 30px;
+        color: #a8a8a8;
+        line-height: 50px;
+        font-weight: 700; }
+      footer .row .contact .email {
+        font-size: 14px;
+        font-weight: 700; }
 
 details {
   padding: 25px;

@@ -2,57 +2,66 @@ footer{
     border: 1px solid $border_color1;
     font-family: 'Lato', Arial, sans-serif;
     padding: $left_padding;
-    h3{
-        font-family: 'Lovelo', Arial, sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 21px;
-    }
-    ul{
-        li{
-            font-size: 13px;
-            line-height: 36px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        h3{
+            font-family: 'Lovelo', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
         }
-    }
-    .payment{
-        div{
-            font-size: 13px;
-            color: $font_color3;
-            line-height: 18px;
-            margin-top: 15px;
-        }
-        .extraInfo{
-            color: $font_color2;
-        }
-    }
-    .contact{
-        padding-left: 50px;
-        form{
-            margin-top: 15px;
-            margin-bottom: 35px;
-            font-size: 11px;
-            input{
-                border-radius: 15px;
-                height: 35px;
-                width: 70%;
-                &[type=submit]{
-                        background: $background_color3;
-                        color: $font_color1;
-                        font-family: 'Lovelo', Arial, sans-serif;
-                        font-weight: bold;
-                        width: 30%;
-                }
+        ul{
+            li{
+                font-size: 13px;
+                line-height: 36px;
             }
         }
-        .phoneNumber{
-            font-size: 30px;
-            color: $font_color3;
-            line-height: 50px;
-            font-weight: 700;
+        .payment{
+            div{
+                font-size: 13px;
+                color: $font_color3;
+                line-height: 18px;
+                margin-top: 15px;
+            }
+            .extraInfo{
+                color: $font_color2;
+            }
         }
-        .email{
-            font-size: 14px;
-            font-weight: 700;
+        .contact{
+            padding-left: 50px;
+            @include smartphone{
+                padding-left: 0;
+                margin-top: 25px;
+            };
+            form{
+                margin-top: 15px;
+                margin-bottom: 35px;
+                font-size: 11px;
+                input{
+                    border-radius: 15px;
+                    height: 35px;
+                    width: 70%;
+                    font-family: 'Lato', Arial, sans-serif;
+                    &[type=submit]{
+                            background: $background_color3;
+                            color: $font_color1;
+                            font-family: 'Lovelo', Arial, sans-serif;
+                            font-weight: bold;
+                            width: 30%;
+                    }
+                }
+            }
+            .phoneNumber{
+                font-size: 30px;
+                color: $font_color3;
+                line-height: 50px;
+                font-weight: 700;
+            }
+            .email{
+                font-size: 14px;
+                font-weight: 700;
+            }
         }
     }
 }

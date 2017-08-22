@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // add price and number of chosen product to basket
     const btnBuyItem = document.querySelectorAll('.buyItem');
-    const basket = document.querySelector('.fa-shopping-cart').firstChild.nextElementSibling;
+    const basket = document.querySelector('.basket span');
+    const mobileBasket = document.querySelector('.basket p');
     let totalPrice = 0;
     let itemCounter = 0;
 
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice += price;
             itemCounter++;
             basket.innerText = totalPrice.toFixed(2)+" zł, prod. ( "+itemCounter+" )";
+            mobileBasket.innerText = "( "+itemCounter+" )";
         })
     }
 

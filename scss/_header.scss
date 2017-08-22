@@ -3,6 +3,9 @@ header{
         height: 25px;
         display: block;
         content: "";
+        @include smartphone{
+            height: 10px;
+        };
     }
     font-size: 13px;
     background: white;
@@ -11,22 +14,36 @@ header{
         text-align: left;
         padding-left: $left_padding;
         order: 2;
+        line-height: 50px;
+        @include tablet{
+            height: 50px;
+        };
     }
     .search{
         position: relative;
         line-height: 30px;
         @include tablet{
             line-height: 50px;
+            height: 50px;
         };
         @include smartphone{
             line-height: 50px;
-            font-size: 30px;
+            font-size: 25px;
             order: 1;
         };
+        div.fa{
+            display: none;
+            @include smartphone{
+                display: block;
+                line-height: 50px;
+                font-size: 25px;
+            };
+        }
         input{
             border-radius: 15px;
             width: 90%;
             height: 30px;
+            font-family: 'Lato', Arial, sans-serif;
             @include smartphone{
                 font-size: 12px;
             };
@@ -48,7 +65,7 @@ header{
     .user, .basket{
         line-height: 30px;
         @include smartphone{
-            font-size: 30px;
+            font-size: 25px;
             line-height: 50px;
             order: 3;
         };
@@ -56,6 +73,13 @@ header{
             font-family: 'Lato', Arial, sans-serif;
             @include smartphone{
                 display: none;
+            };
+        }
+        p{
+            display: none;
+            @include smartphone{
+                display: inline;
+                font-size: 3vw;
             };
         }
     }
@@ -81,7 +105,7 @@ header{
         display: none;
         @include smartphone{
             display: block;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 50px;
             order: 4;
         };
@@ -107,11 +131,15 @@ header{
             };
             li{
                 display: inline-block;
-                width: 8%;
+                width: 10%;
                 text-align: center;
                 font-weight: bold;
                 font-size: 13px;
                 font-family: 'Lovelo', Arial, sans-serif;
+                &:hover{
+                    transform: scale(1.15);
+                    border: 1px solid $background_color3;
+                }
                 @include tablet{
                     width: 16.66%;
                     margin: 15px 0;
@@ -140,6 +168,5 @@ header{
     }
     div.row:first-of-type{
         display: flex;
-        //flex-direction: row-reverse;
     }
 };
