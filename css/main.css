@@ -407,6 +407,9 @@ section {
         width: 11.11%;
         border-left: 1px solid #f3f3f3;
         padding: 20px 30px; }
+        @media (min-width: 768px) and (max-width: 1049px) {
+          section .gallery .galleryImages img {
+            padding: 15px; } }
   section .menu {
     height: 115px; }
     section .menu .lines {
@@ -426,6 +429,9 @@ section {
       width: 22%;
       text-align: center;
       min-height: 460px; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        section .shopItems figure {
+          padding: 50px 15px; } }
       section .shopItems figure img {
         min-height: 320px; }
       section .shopItems figure figcaption {
@@ -456,6 +462,9 @@ section {
       font-weight: bold;
       margin: 25px 0;
       font-size: 11px; }
+      @media (min-width: 768px) and (max-width: 1049px) {
+        section .seeMore button {
+          margin: 0; } }
 
 footer {
   border: 1px solid #f3f3f3;
